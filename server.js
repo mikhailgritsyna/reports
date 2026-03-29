@@ -10,7 +10,8 @@ app.use(cors());
 app.use(express.json());
 
 // Serve static files
-app.use(express.static('public'));
+   app.use(express.static(__dirname));
+
 
 const FB_API_VERSION = 'v18.0';
 const FB_GRAPH_URL = 'https://graph.facebook.com';
